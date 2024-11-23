@@ -21,21 +21,28 @@ html {
   }
 
   h3{
-    font-size: 16px;
+    font-size: 20px;
     text-align: center;
   }
   
   h4 {
-    font-size: 20px;
+    font-size: 16px;
     line-height: 1;
     letter-spacing: 1px;
   }
 
-  p,
+  p {
+    font-size: 16px;
+    line-height: 1.2;
+    letter-spacing: 1px;
+  }
+
   li {
     font-size: 16px;
     line-height: 1.2;
     letter-spacing: 1px;
+    text-align: center;
+    list-style: none;
   }
 
   hr.line1{
@@ -65,11 +72,17 @@ html {
   /*中央揃えにしない画像*/
   .inline-images {
     display: inline-block;
-    margin: 0; /* 中央揃えを無効化 */
+    margin: 0;
   }
 
   .inline-container {
-    text-align: center; /* 横並びの画像全体を中央揃え */
+    text-align: center;
+  }
+
+  .left-align {
+    display: block;
+    margin: 0;
+    text-align: left;
   }
   
   
