@@ -15,30 +15,24 @@ html {
   @media screen and (max-width: 600px) 
   {
     body {
-      font-size: 14px; /* テキストを少し小さくする */
-      padding: 0 10px; /* コンテンツに余白を追加 */
+      font-size: 14px; 
+      padding: 0 10px; 
     }
   
-    /*.inline-container img {
-      /*width: 90%;  画像を画面幅の90%に調整 
-      /*height: auto;  アスペクト比を維持 
-      text-align: center;
-      display: flex;
-      justify-content: center; /* 中央揃え 
-    }*/
+    .inline-container {
+      justify-content: space-around;
+    }
 
-    /*.left-align {
-      display: block;
-      margin: 0;
-      text-align: left;
-    }*/
+    .inline-container img {
+      height: auto;
+    }
   
     table {
-      width: 100%; /* テーブルを画面幅に合わせる */
+      width: 90%;
     }
   
     td {
-      word-wrap: break-word; /* テキストが長い場合は折り返す */
+      word-wrap: break-word;
     }
   }
 
