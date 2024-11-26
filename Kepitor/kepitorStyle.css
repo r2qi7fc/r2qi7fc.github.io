@@ -20,12 +20,21 @@ html {
     }
   
     .inline-container img {
-      width: 90%; /* 画像を画面幅の90%に調整 */
-      height: auto; /* アスペクト比を維持 */
+      /*width: 90%;  画像を画面幅の90%に調整 */
+      /*height: auto;  アスペクト比を維持 */
+      text-align: center;
+      display: flex;
+      justify-content: center; /* 中央揃え */
+    }
+
+    .left-align {
+      display: block;
+      margin: 0;
+      text-align: left;
     }
   
     table {
-      width: 100%; /* テーブルを画面幅に合わせる
+      width: 100%; /* テーブルを画面幅に合わせる */
     }
   
     td {
@@ -111,8 +120,6 @@ html {
     text-align: center;
     display: flex;
     justify-content: center; /* 中央揃え */
-    flex-wrap: wrap; /* 横幅を超える場合は折り返す */
-    gap: 10px; /* 画像の間にスペースを追加 */
   }
 
   .left-align {
