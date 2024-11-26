@@ -1,10 +1,10 @@
 html {
     font-size: 10px; /* px は「ピクセル」 (pixels) の意味。ベースフォントサイズは 10 ピクセルになった */
-    font-family: "Open Sans", sans-serif; /* これが Google フォントから取得した残りの出力になるはず。 */
   }
+
 /*本文全体の設定*/
   body {
-    width: 800px;
+    max-width: 800px;
     margin: 0 auto;
     background-color: #000000;
     padding: 0 20px 20px 20px;
@@ -57,8 +57,12 @@ html {
   }
 
   @media screen and (max-width: 600px){
+    body {
+      padding: 0 10px;
+    }
+
     h1 {
-      font-size: 30px;
+      font-size: 28px;
       text-align: center;
     }
   
@@ -68,40 +72,34 @@ html {
     }
   
     h3{
-      font-size: 15px;
+      font-size: 16px;
       text-align: center;
     }
     
     h4 {
-      font-size: 12px;
+      font-size: 13px;
       line-height: 1;
       letter-spacing: 1px;
     }
 
     p {
-      font-size: 12px;
+      font-size: 14px;
       line-height: 1.2;
       letter-spacing: 1px;
       text-align: center;
     }
   
     .intro-p{
-      font-size: 10px;
+      font-size: 12px;
       text-align: center;
     }
   
     tr, th{
-      font-size: 12px;
+      font-size: 14px;
       line-height: 1.05;
       letter-spacing: 1.05px;
     }
   
-    li {
-      font-size: 12px;
-      line-height: 1.1;
-      letter-spacing: 1px;
-    }
-
     table {
       width: 100%;
     }
