@@ -1,5 +1,5 @@
 html {
-    font-size: 10px; /* px は「ピクセル」 (pixels) の意味。ベースフォントサイズは 10 ピクセルの高さになった */
+    font-size: 10px; /* px は「ピクセル」 (pixels) の意味。ベースフォントサイズは 10 ピクセルになった */
     font-family: "Open Sans", sans-serif; /* これが Google フォントから取得した残りの出力になるはず。 */
   }
 /*本文全体の設定*/
@@ -8,6 +8,29 @@ html {
     margin: 0 auto;
     background-color: #000000;
     padding: 0 20px 20px 20px;
+  }
+  
+  
+  /* スマホ向け (画面幅600px以下の場合) */
+  @media screen and (max-width: 600px) 
+  {
+    body {
+      font-size: 14px; /* テキストを少し小さくする */
+      padding: 0 10px; /* コンテンツに余白を追加 */
+    }
+  
+    .inline-container img {
+      width: 90%; /* 画像を画面幅の90%に調整 */
+      height: auto; /* アスペクト比を維持 */
+    }
+  
+    table {
+      width: 100%; /* テーブルを画面幅に合わせる
+    }
+  
+    td {
+      word-wrap: break-word; /* テキストが長い場合は折り返す */
+    }
   }
 
   h1 {
@@ -74,22 +97,28 @@ html {
   img {
     display: block;
     margin: 0 auto;
+    max-width: 100%; /* 画像が画面幅を超えない */
+    height: auto; /* アスペクト比を維持 */
   }
 
   /*中央揃えにしない画像*/
   .inline-images {
     display: inline-block;
-    margin: 0; /* 中央揃えを無効化 */
+    margin: 0;
   }
 
   .inline-container {
-    text-align: center; /* 横並びの画像全体を中央揃え */
+    text-align: center;
+    display: flex;
+    justify-content: center; /* 中央揃え */
+    flex-wrap: wrap; /* 横幅を超える場合は折り返す */
+    gap: 10px; /* 画像の間にスペースを追加 */
   }
 
   .left-align {
-    display: block; /* ブロック要素のまま */
-    margin: 0; /* 自動マージンをリセット */
-    text-align: left; /* 必要に応じてテキストの左寄せ */
+    display: block;
+    margin: 0;
+    text-align: left;
   }
   
   
@@ -108,6 +137,6 @@ html {
   }
 
   .intro-p{
-    font-size: 15px;
+    font-size: 13px;
     text-align: center;
   }
