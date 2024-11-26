@@ -9,32 +9,6 @@ html {
     background-color: #000000;
     padding: 0 20px 20px 20px;
   }
-  
-  
-  /* スマホ向け (画面幅600px以下の場合) */
-  @media screen and (max-width: 600px) 
-  {
-    body {
-      font-size: 14px; 
-      padding: 0 10px; 
-    }
-  
-    .inline-container {
-      justify-content: space-around;
-    }
-
-    .inline-container img {
-      height: auto;
-    }
-  
-    table {
-      width: 90%;
-    }
-  
-    td {
-      word-wrap: break-word;
-    }
-  }
 
   h1 {
     font-size: 40px;
@@ -64,6 +38,11 @@ html {
     text-align: center;
   }
 
+  .intro-p{
+    font-size: 13px;
+    text-align: center;
+  }
+
   tr, th{
     font-size: 16px;
     line-height: 1.4;
@@ -74,16 +53,70 @@ html {
     font-size: 16px;
     line-height: 1.2;
     letter-spacing: 1px;
-    /*text-align: center;
-    list-style: none;*/
+    /*list-style: none;*/
   }
+
+  /*@media screen and (max-width: 600px){
+    h1 {
+      font-size: 30px;
+      text-align: center;
+    }
+  
+    h2 {
+      font-size: 22px;
+      text-align: center;
+    }
+  
+    h3{
+      font-size: 15px;
+      text-align: center;
+    }
+    
+    h4 {
+      font-size: 12px;
+      line-height: 1;
+      letter-spacing: 1px;
+    }
+
+    p {
+      font-size: 12px;
+      line-height: 1.2;
+      letter-spacing: 1px;
+      text-align: center;
+    }
+  
+    .intro-p{
+      font-size: 10px;
+      text-align: center;
+    }
+  
+    tr, th{
+      font-size: 12px;
+      line-height: 1.05;
+      letter-spacing: 1.05px;
+    }
+  
+    li {
+      font-size: 12px;
+      line-height: 1.1;
+      letter-spacing: 1px;
+    }
+
+    table {
+      width: 100%;
+    }
+  
+    td {
+      word-wrap: break-word;
+    }
+  }*/
 
   hr.line1{
     border: none;
     border-top: 2px dotted #6fa8a7;
   }
 
-  /*リンクのスタイル設定*/
+  /*リンクの設定*/
   a:link {
     color: lightseagreen;
   }
@@ -100,8 +133,8 @@ html {
   img {
     display: block;
     margin: 0 auto;
-    max-width: 100%; /* 画像が画面幅を超えない */
-    height: auto; /* アスペクト比を維持 */
+    max-width: 100%;
+    height: auto;
   }
 
   /*中央揃えにしない画像*/
@@ -113,7 +146,7 @@ html {
   .inline-container {
     text-align: center;
     display: flex;
-    justify-content: center; /* 中央揃え */
+    justify-content: center;
   }
 
   .left-align {
@@ -134,10 +167,5 @@ html {
   }
 
   .home-p{
-    text-align: center;
-  }
-
-  .intro-p{
-    font-size: 13px;
     text-align: center;
   }
