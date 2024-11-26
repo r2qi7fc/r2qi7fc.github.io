@@ -1,117 +1,73 @@
-html {
-    font-size: 10px; /* px は「ピクセル」 (pixels) の意味。ベースフォントサイズは 10 ピクセルになった */
-    font-family: "Open Sans", sans-serif; /* これが Google フォントから取得した残りの出力になるはず。 */
-  }
-/*本文全体の設定*/
-  body {
-    width: 800px;
-    margin: 0 auto;
-    background-color: #000000;
-    padding: 0 20px 20px 20px;
-  }
+<!doctype html>
+<html lang="ja">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width" />
+    <link href="kepitorStyle.css" rel="stylesheet" />
+    <title>Kepitor</title>
+  </head>
 
+  <body>
+    <p align="center">		<!--メニュー-->
+			<img src="Images/top.png" border="0" alt="top.png" width="800" height="120"><br>
+      <div class="inline-container">
+			<!--Home--><a href="Home.html"><img src="Images/menu1.png" class="inline-images" border="0" alt="menu" width="190" height="60"></a>
+      <!--Game--><a href="Game.html"><img src="Images/menu2.png" class="inline-images" border="0" alt="menu" width="190" height="60"></a>
+      <!--Memory--><a href="Memory.html"><img src="Images/menu3.png" class="inline-images" border="0" alt="menu" width="190" height="60"></a>
+      <!--Link--><a href="Link.html"><img src="Images/menu4.png" class="inline-images" border="0" alt="menu" width="190" height="60"></a>
+			</p></div>
+    <p align="center">&nbsp;</p>			<!--/メニュー-->
 
-  h1 {
-    font-size: 40px;
-    text-align: center;
-  }
+    
+    <!--タイトル-->
+    <p></p>
 
-  h2 {
-    font-size: 30px;
-    text-align: center;
-  }
+    <!--本文-->
+    <font color="6fa8a7">
+    <h3>操作方法</h3>
+    <table border="0">
+      <tr>
+        <td rowspan="4">矢印キー</td>
+        <td>↑</td>
+        <td>前に移動</td>
+      </tr>
+      <tr>
+        <td>↓</td>
+        <td>下に移動</td>
+      </tr>
+      <tr>
+        <td>→</td>
+        <td>右に移動</td>
+      </tr>
+      <tr>
+        <td>←</td>
+        <td>左に移動</td>
+      </tr>
+      <tr>
+        <td>Zキー</td>
+        <td></td>
+        <td>選択/音の再生など。とにかく操作はZキーがほとんどです。</td>
+      </tr>
+      <tr>
+        <td>Cキー</td>
+        <td></td>
+        <td>左下テキスト表示</td>
+      </tr>
+    </table>
+    </font>
 
-  h3{
-    font-size: 20px;
-    text-align: center;
-  }
-  
-  h4 {
-    font-size: 16px;
-    line-height: 1;
-    letter-spacing: 1px;
-  }
-
-  p {
-    font-size: 16px;
-    line-height: 1.2;
-    letter-spacing: 1px;
-    text-align: center;
-  }
-
-  tr, th{
-    font-size: 16px;
-    line-height: 1.4;
-    letter-spacing: 1.4px;
-  }
-
-  li {
-    font-size: 16px;
-    line-height: 1.2;
-    letter-spacing: 1px;
-    /*list-style: none;*/
-  }
-
-  hr.line1{
-    border: none;
-    border-top: 2px dotted #6fa8a7;
-  }
-
-  /*リンクの設定*/
-  a:link {
-    color: lightseagreen;
-  }
- 
-  a:visited {
-    color: blueviolet;
-  }
-
-  a:hover {
-    text-decoration: none;
-  }
-
-  /*画像の設定*/
-  img {
-    display: block;
-    margin: 0 auto;
-    max-width: 100%;
-    height: auto;
-  }
-
-  /*中央揃えにしない画像*/
-  .inline-images {
-    display: inline-block;
-    margin: 0;
-  }
-
-  .inline-container {
-    text-align: center;
-    display: flex;
-    justify-content: center;
-  }
-
-  .left-align {
-    display: block;
-    margin: 0;
-    text-align: left;
-  }
-  
-  
-  /*そのほかの詳細設定*/
-  .date{
-    font-weight: bold;
-  }
-
-  .midashi{
-    font-weight: bold;
-    color: darkblue;
-  }
-
-  .home-p{
-    text-align: center;
-  }
-
-  .intro-p{
-    font-size: 13px;
-    text-align: center;
-  }
+    <!--画像-->
+    <div class="inline-container">
+    <img src="Images/1.gif" class="inline-images" alt="Kepitor_left" border="0" width="30" height="40"/>
+    <img src="Images/2.gif" class="inline-images" alt="player_down" border="0" width="30" height="40"/>
+    <img src="Images/3.gif" class="inline-images" alt="player_right" border="0" width="30" height="40"/>
+    </div>
+    
+    &nbsp;<br>
+    <hr class="line1">
+    <font color="#6fa8a7">
+    <p class="intro-p">東京藝術大学　音楽学部　音楽環境創造科</p>
+    <p class="intro-p">プロジェクト音響　丸井研究室所属　学部2年　福冨琴梨</p></font>
+    <hr class="line1">
+  </body>
+</html>
