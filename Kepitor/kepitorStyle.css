@@ -35,6 +35,13 @@ html {
     font-size: 16px;
     line-height: 1.2;
     letter-spacing: 1px;
+    text-align: center;
+  }
+
+  tr, th{
+    font-size: 16px;
+    line-height: 1.4;
+    letter-spacing: 1.4px;
   }
 
   li {
@@ -97,5 +104,10 @@ html {
   }
 
   .home-p{
+    text-align: center;
+  }
+
+  .intro-p{
+    font-size: 15px;
     text-align: center;
   }
