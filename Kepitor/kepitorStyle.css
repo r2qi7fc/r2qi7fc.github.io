@@ -19,19 +19,19 @@ html {
       padding: 0 10px; /* コンテンツに余白を追加 */
     }
   
-    .inline-container img {
-      /*width: 90%;  画像を画面幅の90%に調整 */
-      /*height: auto;  アスペクト比を維持 */
+    /*.inline-container img {
+      /*width: 90%;  画像を画面幅の90%に調整 
+      /*height: auto;  アスペクト比を維持 
       text-align: center;
       display: flex;
-      justify-content: center; /* 中央揃え */
-    }
+      justify-content: center; /* 中央揃え 
+    }*/
 
-    .left-align {
+    /*.left-align {
       display: block;
       margin: 0;
       text-align: left;
-    }
+    }*/
   
     table {
       width: 100%; /* テーブルを画面幅に合わせる */
