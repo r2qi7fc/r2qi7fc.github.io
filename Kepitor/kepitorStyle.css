@@ -56,7 +56,7 @@ html {
     /*list-style: none;*/
   }
 
-  /*@media screen and (max-width: 600px){
+  @media screen and (max-width: 600px){
     h1 {
       font-size: 30px;
       text-align: center;
@@ -109,7 +109,7 @@ html {
     td {
       word-wrap: break-word;
     }
-  }*/
+  }
 
   hr.line1{
     border: none;
