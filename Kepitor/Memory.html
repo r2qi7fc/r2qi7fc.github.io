@@ -2,19 +2,19 @@
 <html lang="ja">
   <head>
     <meta charset="utf-8" />
-    <body bgcolor="#000000"></body>
     <meta name="viewport" content="width=device-width" />
     <link href="kepitorStyle.css" rel="stylesheet" />
     <title>KepitorGame</title>
   </head>
 
   <body>
-    <p align="center">		<!--メニュー-->
+    <!--メニュー-->
         <img src="Images/top.png" border="0" alt="top.png" width="800" height="120"><br>
         <div class="inline-container">
-            <!--Game--><a href="Memory.html"><img src="Images/menu3.png" class="left-align" border="0" alt="menu" width="190" height="60"></a>
+          <!--Memory--><a href="Memory.html"><img src="Images/menu3.png" class="left-align" border="0" alt="menu" width="190" height="60"></a>
         </p></div>
-    <p align="center">&nbsp;</p>			<!--/メニュー-->
+        &nbsp;</p>			
+    <!--/メニュー-->
 
     
     <!--タイトル-->
@@ -25,13 +25,57 @@
 
     <!--本文-->
     <font color="6fa8a7">
-    <h2>製作中...</h2>
-    <p></p>
-    </font>
+
+    <!--<h3>ゲーム内テキストのフォント</h3>
+    <p><a href="https://littlelimit.net/misaki.htm">8×8ドット日本語フォント「美咲フォント」</a></p>
+    &nbsp;<br>
+    &nbsp;<br>
+    -->
+      
+    
+    <!--<h3>参考文献</h3>
+    <ul>
+        <li>大山正. (1994).『色彩心理学入門　ニュートンとゲーテの流れを追って』中公新書.</li>
+        <li>伊藤浩介. (2021).『ドレミファソラシは虹の七色？　知られざる「共感覚の世界」』光文社新書.</li>
+        <li>岩井大輔, 長田典子, 津田学, 和氣早苗, 井口政士. (2003). 音と色のノンバーバルマッピング-色聴保持者のマッピング抽出とその応用. 電子情報通信学会論文誌.</li>
+        <li>岩崎純一. (2009).『音に色が見える世界　「共感覚」とは何か』PHP研究所.</li>
+        <li>北村紗衣編著. (2012).『共感覚の地平　共感覚は共有できるか？:表象文化論学会誌第4回大会パネル記録集』</li>
+        <li></li>
+    </ul>
+    &nbsp;<br>-->
+    
+    <h3>使用したツール</h3>
+    <ul>
+      <li>Unity(ゲーム制作エンジン)</li>
+      <li>Wwise(オーディオミドルウェア)</li>
+      <li>StudiioOne6(DAW)</li>
+      <li>Piskel(ピクセルアート描画)</li>
+      <li>p5.js(背景)</li>
+      <li>(GameMaker)</li>
+      <li>(FMOD)</li>
+    </ul>
+  &nbsp;<br>
+  <p></p>
+
+  <!--
+    10月25日に、研究発表と展示の方針の決定をしました。
+    最初は上記括弧内にある、GameMakerを使用してゲームを制作していましたが、5.1chにならず、Unityに移行しました。
+    また、最初はオーディオミドルウェアもFMODを使用していました。
+    FMOD自体で5.1chの出力はできましたが、Unityとインテグレートしてプレイした際にモノラルになってしまう問題を解決できず、Wwiseに移行しました。
+    GameMakerで5.1chにならない問題で1週間、FMODとUnityのインテグレート問題で1週間費やしたため、実質制作期間は1ヶ月強です。
+    Unity内でも実装したい操作がうまくいかず挫折・妥協したところがたくさんあります。
+    Wwiseの使い方も微塵も知らないところから始めたので、細かい制御ができていません。
+    楽曲制作・ピクセルアートの描画もこの期間内に全てやりました。
+    1ヶ月で頑張れば完成できると思った過去の自分は、無謀すぎました。
+    反省。
+  -->
+  
+  </font>
+  &nbsp;<br>
 
     <!--画像-->
     <div class="inline-container">
-    <img src="Images/1.gif" class="inline-images" alt="Kepitor_left" border="0" width="30" height="40"/>
+    <img src="Images/1.gif" class="inline-images" alt="player_left" border="0" width="30" height="40"/>
     <img src="Images/2.gif" class="inline-images" alt="player_down" border="0" width="30" height="40"/>
     <img src="Images/3.gif" class="inline-images" alt="player_right" border="0" width="30" height="40"/>
     </div>
