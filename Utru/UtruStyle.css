@@ -1,0 +1,191 @@
+html {
+    font-size: 10px; /* ベースフォントサイズは 10 ピクセルになった */
+  }
+
+/*本文全体の設定*/
+  body {
+    max-width: 800px;
+    margin: 0 auto;
+    background-color: #f1f1f1;
+    padding: 10px 20px 20px 20px;
+  }
+
+  h1 {
+    font-size: 40px;
+    text-align: center;
+  }
+
+  h2 {
+    font-size: 30px;
+    text-align: center;
+  }
+
+  h3{
+    font-size: 20px;
+    text-align: center;
+  }
+  
+  h4 {
+    font-size: 16px;
+    line-height: 1;
+    letter-spacing: 1px;
+  }
+
+  p {
+    font-size: 16px;
+    line-height: 1.2;
+    letter-spacing: 1px;
+    text-align: center;
+  }
+
+  .intro-p{
+    font-size: 13px;
+    text-align: center;
+  }
+
+  tr, th{
+    font-size: 16px;
+    line-height: 1.4;
+    letter-spacing: 1.4px;
+  }
+
+  li {
+    font-size: 16px;
+    line-height: 1.2;
+    letter-spacing: 1px;
+    /*list-style: none;*/
+  }
+
+  @media screen and (max-width: 600px){
+    body {
+      padding: 0 10px;
+    }
+
+    h1 {
+      font-size: 25px;
+      text-align: center;
+    }
+  
+    h2 {
+      font-size: 20px;
+      text-align: center;
+    }
+  
+    h3{
+      font-size: 14px;
+      text-align: center;
+    }
+    
+    h4 {
+      font-size: 12px;
+      line-height: 1;
+      letter-spacing: 1px;
+    }
+
+    p {
+      font-size: 12px;
+      line-height: 1.2;
+      letter-spacing: 1px;
+      text-align: center;
+    }
+  
+    .intro-p{
+      font-size: 10px;
+      text-align: center;
+    }
+  
+    tr, th{
+      font-size: 12px;
+      line-height: 1.05;
+      letter-spacing: 1.05px;
+    }
+
+    ul, li{
+      font-size: 12px;
+      line-height: 1.2;
+      letter-spacing: 1.2;
+    }
+  
+    table {
+      width: 100%;
+    }
+  
+    td {
+      word-wrap: break-word;
+    }
+
+    .inline-images {
+      display: inline-block;
+      margin: 0;
+    }
+  
+    .inline-container {
+      text-align: center;
+      display: flex;
+      justify-content: center;
+    }
+  
+    .left-align {
+      display: block;
+      margin: 0;
+      text-align: left;
+    }
+  }
+
+  hr.line1{
+    border: none;
+    border-top: 2px dotted #000000;
+  }
+
+  /*リンクの設定*/
+  a:link {
+    color: rgb(0, 0, 0);
+  }
+ 
+  a:visited {
+    color: rgb(77, 136, 167);
+  }
+
+  a:hover {
+    text-decoration: none;
+  }
+
+  /*画像の設定*/
+  img {
+    display: block;
+    margin: 0 auto;
+    max-width: 100%;
+    height: auto;
+  }
+
+  /*中央揃えにしない画像*/
+  .inline-images {
+    display: inline-block;
+    margin: 0;
+  }
+
+  .inline-container {
+    text-align: center;
+    display: flex;
+    justify-content: center;
+  }
+
+  .left-align {
+    display: block;
+    margin: 0;
+    text-align: left;
+  }
+  
+  /*そのほかの詳細設定*/
+  .date{
+    font-weight: bold;
+  }
+
+  .midashi{
+    font-weight: bold;
+    color: darkblue;
+  }
+
+  .home-p{
+    text-align: center;
+  }
